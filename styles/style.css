@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 1.51fr 2fr 1.5fr;
   align-items: center;
   padding: 92px 51px 89px;
 }
@@ -78,31 +78,40 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 21px;
 }
 
 .aligned-text {
+  display: flex;
+  text-align: left;
+  line-height: 115px;
+  letter-spacing: 30px;
+}
+
+.aligned-text:last-child {
   display: block;
+  margin-bottom: 0;
 }
 
 .aligned-text_center {
-  line-height: 1;
   text-align: center;
+  margin-left: 5px;
+  line-height: 100px;
+  letter-spacing: 30px;
 }
 
 .aligned-text_right {
-  line-height: 1;
   text-align: right;
+  line-height: 100px;
+  letter-spacing: 30px;
+}
+
+.no-letter-spacing {
+  letter-spacing: initial;
 }
 
 .letter-spacing-extended {
   letter-spacing: 60px;
-}
-
-/* Убирает ненужный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
-
-.remove-spacing {
-  letter-spacing: normal;
 }
 
 .cover__description {
@@ -137,7 +146,7 @@
 }
 
 .lots {
-  padding: 0 50px;
+  padding: 0 24px;
 }
 
 .lots__heading {
@@ -258,14 +267,11 @@
 }
 
 .about__text {
+  font-size: 20px;
+  line-height: normal;
   display: flex;
   flex-direction: column;
   gap: 25px;
-}
-
-.about__text {
-  font-size: 20px;
-  line-height: normal;
 }
 
 .footer {
