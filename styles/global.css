@@ -36,14 +36,3 @@ img {
 button {
   font: inherit;
 }
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
-}
-
-.content-section {
-  width: 100%;
-  margin: 0 auto;
-}
