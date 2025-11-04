@@ -40,7 +40,7 @@ button {
 main {
   display: flex;
   flex-direction: column;
-  gap: 183px;
+  gap: 120px;
 }
 
 .content-section {
